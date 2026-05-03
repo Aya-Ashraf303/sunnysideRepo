@@ -1,24 +1,45 @@
 <div>
-  <div class="heading-container  ">
+  <div class="heading-container ">
     <!-- Section 01 -->
     <app-header-section></app-header-section>
   </div>
-  <!-- Section 02 -->
 
-  <app-transformation-section></app-transformation-section>
+
+  <!-- Section 02 -->
+  <div #transform>
+    <app-transformation-section></app-transformation-section>
+  </div>
 
   <!-- Section 03 -->
-  <app-standing-out-section></app-standing-out-section>
+  <div #standout>
+    @defer (on viewport(transform)) {
+    <app-standing-out-section></app-standing-out-section>
+    }
+  </div>
 
   <!-- Section 04 -->
-  <app-gallery-section></app-gallery-section>
+  <div #gallery>
+    @defer(on viewport(standout)){
+    <app-gallery-section></app-gallery-section>
+    }
+  </div>
 
   <!-- Section 05 -->
-  <app-testimonials-section></app-testimonials-section>
+  <div #testimonial>
+    @defer (on viewport(gallery)) {
+    <app-testimonials-section></app-testimonials-section>
+    }
+  </div>
 
   <!-- Section 06 -->
-  <app-sunnyside-images-section></app-sunnyside-images-section>
+  <div #images>
+    @defer (on viewport(testimonial)) {
+    <app-sunnyside-images-section></app-sunnyside-images-section>
+    }
+  </div>
 
   <!-- Section 07 -->
+  @defer (on viewport(images)) {
   <app-sunnyside-footer-section></app-sunnyside-footer-section>
+  }
 </div>
