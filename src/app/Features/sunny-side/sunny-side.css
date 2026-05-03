@@ -1,0 +1,19 @@
+.heading-container {
+    background-image: url('/images/desktop/image-header.jpg');
+    background-position: center center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+@media (max-width:575px) {
+    .heading-container {
+        background-image: url('/images/mobile/image-header.jpg');
+        min-height: 65vh;
+    }
+}
+
+@media (min-width:767px) and (max-width:991px) {
+    .heading-container {
+        background-position: bottom;
+    }
+}

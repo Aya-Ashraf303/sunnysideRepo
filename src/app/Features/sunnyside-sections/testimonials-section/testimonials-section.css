@@ -1,0 +1,40 @@
+.client-testimonial-section h3 {
+    letter-spacing: 6px;
+    font-size: 1.25rem;
+}
+
+.client-testimonial-section {
+    background-color: var(--light-gray-color);
+    padding: 1.8rem 6.5rem;
+}
+
+.client-testimonial-section h3,
+.client-info small {
+
+    color: var(--light-gray);
+}
+
+.client-testimonial-section p {
+    color: var(--text-gray);
+    line-height: 28px;
+}
+
+.client-info h5 {
+    color: var(--text-dark-gray-color);
+}
+
+@media (max-width:575px) {
+    .client-testimonial-section {
+        padding: 0.7rem 0.7rem 3.8rem;
+    }
+
+    .client-testimonial-section h3 {
+        font-size: 0.95rem;
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    .client-testimonial-section {
+        padding: 2rem 8rem;
+    }
+}

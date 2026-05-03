@@ -1,0 +1,16 @@
+.footer-section {
+    background-color: var(--lighter-green);
+}
+
+.footer-section h3,
+.footer-section ul li,
+.social-media i {
+    color: var(--light-green);
+    transition: color 0.5s;
+    cursor: pointer;
+}
+
+.footer-section ul li:hover,
+.footer-section i:hover {
+    color: white;
+}

@@ -1,0 +1,124 @@
+div.header-overlay-content {
+    font-size: 0.88rem;
+}
+
+.nav-item .nav-link {
+    color: white;
+}
+
+.navbar-collapse ul {
+    gap: 24px;
+}
+
+.nav-item .nav-link.contact-btn {
+    padding: 0.8rem 1.5rem;
+    background-color: white;
+    color: var(--text-dark-gray-color);
+    transition: all 0.3s;
+    font-size: 0.88rem;
+}
+
+.nav-item .nav-link.contact-btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    cursor: pointer;
+}
+
+.hero-section h1 {
+    letter-spacing: 8px;
+    font-size: 3.5rem;
+    margin-block: 2.5rem;
+}
+
+@media (max-width:575px) {
+    .navbar-toggler i {
+        color: var(--light-gray-color);
+    }
+
+
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+        margin-block: 2rem;
+
+    }
+
+    .navbar-collapse {
+        padding: 2.2rem 10rem;
+        background-color: var(--light-gray-color);
+        position: absolute;
+        top: 120%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: calc(100% - 10px);
+        max-width: 350px;
+        text-align: center;
+
+    }
+
+    button.navbar-toggler:focus {
+        box-shadow: 0px 0px 0px 0px transparent;
+    }
+
+    .navbar-collapse ul {
+        gap: 15px;
+    }
+
+    .navbar-collapse ul li a {
+        color: var(--text-gray);
+        font-weight: 800;
+        font-size: 1rem;
+
+    }
+
+    li.nav-item .nav-link.contact-btn {
+        background-color: var(--yellow-color);
+        color: var(--text-dark-gray-color) !important;
+        font-size: 0.9rem;
+
+
+    }
+
+    li.nav-item .nav-link.contact-btn:hover {
+        background-color: var(--yellow-color);
+    }
+
+    .navbar-collapse::after {
+        content: " ";
+        position: absolute;
+        bottom: 99%;
+        right: 0px;
+        border-left: 20px solid transparent;
+        border-bottom: 30px solid var(--light-gray-color);
+
+    }
+}
+
+@media (min-width:576px) and (max-width:767px) {
+
+    .hero-section h1,
+    .hero-section {
+        padding: 0rem 1rem;
+    }
+
+    .hero-section h1 {
+        margin-block: 3rem;
+    }
+
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .hero-section h1 {
+        margin-block: 5rem;
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+
+    .hero-section h1,
+    .hero-section {
+        padding: 2rem 1rem;
+    }
+
+}

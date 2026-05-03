@@ -1,0 +1,67 @@
+.transform-section {
+    background-color: var(--light-gray-color);
+}
+
+.transform-text h2,
+.transform-text span {
+    color: var(--text-dark-gray-color);
+}
+
+.transform-text p {
+    color: var(--text-gray);
+    line-height: 1.7;
+}
+
+.transform-text span {
+    position: relative;
+    z-index: 50;
+    letter-spacing: 1.2px;
+    cursor: pointer;
+
+}
+
+.transform-text {
+    padding: 10rem;
+}
+
+.transform-text span::after {
+    content: "";
+    position: absolute;
+    z-index: -50;
+    top: 14px;
+    left: 0;
+    background-color: rgba(255, 213, 0, 0.24);
+    width: 100%;
+    height: 8px;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+.transform-text span:hover::after {
+    background-color: var(--yellow-color);
+}
+
+@media (max-width:575px) {
+    .transform-text {
+        padding: 4rem 2rem;
+    }
+}
+
+@media (min-width:576px) and (max-width:767px) {
+    .transform-text {
+        padding: 4rem 7rem;
+    }
+}
+
+@media (min-width:768px) and (max-width :991px) {
+    .transform-text {
+        padding: 2.5rem;
+    }
+
+}
+
+@media (min-width:992px) and (max-width :1199px) {
+    .transform-text {
+        padding-inline: 4rem;
+    }
+}
